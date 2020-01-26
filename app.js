@@ -17,7 +17,7 @@ app.use(cors());
 app.use(router);
 
 app.get('/', (req, res)=>{
-    res.send('welcome to productlist-api')
+    res.send('welcome to productlist-api: /products endpoint to list all products, /product/id to list a specific product using id (id 1-4 are available)  ')
 })
 
 

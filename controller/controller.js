@@ -24,12 +24,10 @@ class productController{
                     product
                 });
             }
-            else {
-                return res.status(404).send({
-                    success: 'false',
-                    message: 'product does not exist'
-                });
-            }
+        });
+        return res.status(404).send({
+            success: 'false',
+            message: 'product does not exist'
         });
         
     }
