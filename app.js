@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 app.use(router);
 
+app.get('/', (req, res)=>{
+    res.send('welcome to productlist-api')
+})
+
 const PORT = 7000;
 app.listen(PORT, ()=>{
     console.log('listening on 7000');
